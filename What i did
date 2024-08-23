@@ -1,0 +1,3 @@
+Het , there in this script i have done an etl process using the Api and extracted the data of covid -19
+i did some transformations and using databricks notebook
+and saved it to my s3 as parquetfile
