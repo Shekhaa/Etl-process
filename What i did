@@ -1,3 +1,19 @@
-Het , there in this script i have done an etl process using the Api and extracted the data of covid -19
-i did some transformations and using databricks notebook
-and saved it to my s3 as parquetfile
+The ETL process 
+Extraction:
+The data extrction part was from API which i used to extract data for each and every continent ,country and city.
+  This data is then formatted into json file and saved it in databricks(we can also directly use it for transformation without saving it).
+  now the data is ready to be used for transforation as per need.
+
+Transformation:
+This part is really challenging as data was having nested json data due to which i had to remove excess columns and extra feilds which is not needed.
+The transforamtions depends on the need to business.
+  The first task was to remove the Missing Values as from last year there is no case in many countires , So fix those missing values .
+  Then, the second one is for finding death rate per country.
+
+Load:
+After making trasnformations in it, the final thing is to load it into Amazon S3.
+  1.The first thing was making partition on basis of continent.
+  2.Saving it in parquet Format For Security.
+
+#you can find the video of my code in In this link:
+    
